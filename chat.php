@@ -2,10 +2,10 @@
 session_start();
 
 // Konfigurasi Azure OpenAI - Ganti dengan kredensial Anda
-define('AZURE_OPENAI_ENDPOINT', 'https://nanoai.openai.azure.com/');
-define('AZURE_OPENAI_KEY', 'CO6K3zmD0Qfv4lM5fBQiunZT1oKegTKbilfF0KHaPMSAA4uI8hOIJQQJ99BHACYeBjFXJ3w3AAABACOGbvoe'); // Ganti dengan API key Anda
-define('AZURE_DEPLOYMENT_NAME', 'gpt-4o');
-define('AZURE_API_VERSION', '2025-01-01-preview');
+define('AZURE_OPENAI_ENDPOINT', ''); // ganti endpoint anda
+define('AZURE_OPENAI_KEY', ''); // Ganti dengan API key Anda
+define('AZURE_DEPLOYMENT_NAME', 'gpt-4o');// ganti drployment anda
+define('AZURE_API_VERSION', '2025-01-01-preview'); // ganti api version anda
 
 // Initialize chat history
 if (!isset($_SESSION['chat_history'])) {
@@ -627,4 +627,5 @@ function callAzureOpenAI($message, $history) {
         });
     </script>
 </body>
+
 </html>
