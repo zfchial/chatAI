@@ -104,14 +104,6 @@ define('AZURE_API_VERSION', '2025-01-01-preview');
 
 ---
 
-## 🔒 Keamanan
-- **JANGAN** commit API key ke repo publik.
-- Batasi akses file ke domain yang sah (gunakan HTTPS).
-- Perhatikan kuota dan rate limit Azure OpenAI (HTTP 429).
-- *Timeout* cURL diset (mis. 30s). Sesuaikan bila diperlukan.
-
----
-
 ## 🧰 Troubleshooting
 - **401/403** → Key/Endpoint/Deployment salah.
 - **404** → Cek path endpoint atau versi API.
